@@ -1,0 +1,46 @@
+<!DOCTYPE html><html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <title>Explorando Marte</title>
+    <link rel = "icon" href ="nave.png" type = "image/x-icon">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="navegacao.js"></script>
+    <link rel="stylesheet" type="text/css" href="navegacao.css">
+</head>
+<body>
+
+<h1>Explorando Marte!</h1>
+<div class="container">
+    <form>
+        <p>
+            <label class="floatLabel">Tamanho do planalto</label>
+            <input id="planalto" name="planalto" type="text" maxlength="2" placeholder="Exemplo: 55">
+        </p>
+        <p>
+            <label class="floatLabel">Posição inicial da nave</label>
+            <input id="pinicial" name="pinicial" type="text" maxlength="3" placeholder="Exemplo: 12N">
+        </p>
+        <p>
+            <button class="acao" id="btn-right">Right</button>
+            <button class="acao" id="btn-left">Left</button>
+            <button class="acao" id="btn-move">Move</button>
+        </p>
+        <p>
+            <label class="floatLabel">Coordenadas</label>
+            <input id="coordenadas" name="coordenadas" type="text">
+        </p>
+        <p>
+            <button class="navegar" id="btn-navegar">Navegar</button>
+        </p>
+    </form>
+  </div>
+
+  <div>
+    <p>
+           <label class="resultado" id="resultado" ></label>
+    </p>
+  </div>
+
+</body>
+</html>
